@@ -1,3 +1,15 @@
+let input = document.querySelector("input")
+let suggestions = document.querySelector("#suggestions")
+let filterList = []
+
+
+
+
+
+
+
+
+
 let collect = async () => {
   let request = await fetch("https://gist.githubusercontent.com/anubhavshrimal/75f6183458db8c453306f93521e93d37/raw/f77e7598a8503f1f70528ae1cbf9f66755698a16/CountryCodes.json")
 
@@ -7,10 +19,19 @@ let collect = async () => {
     return each.name
   })
 
-  console.log(alllist)
+  alllist.filter(listitem => {
+    filterList = listitem.toLowerCase().includes(input.value.toLowerCase())
+  })
+
+
+
+  console.log(filterList)
+
 
 }
 
 
 
-collect()
+input.addEventListener("keyup", () => {
+  collect()
+})
