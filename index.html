@@ -3,32 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Search With Suggestions</title>
-
-  <!-- HTML -->
-
-
-  <!-- Custom Styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <title>Autosuggest Search Bar</title>
 </head>
 
 <body>
-
-  <div id="main">
-    <input type="text" name="" id="input" placeholder="Type Here.....">
-    <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <div class="autosuggest">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <ul id="suggestions"></ul>
   </div>
-
-
-  <div id="suggestions">
-
-  </div>
-
-
-
   <script src="main.js"></script>
 </body>
 
